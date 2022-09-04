@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(197, 233, 190);
+  color: rgb(66, 66, 66);
+  text-align: center;
+}
+
+.destinationsList {
+  background-color: rgba(65, 105, 225, 0.123);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+.destinationsList:hover {
+  background-color: rgba(238, 227, 79, 0.589);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.container {
+  margin: 0rem 20%;
+}
+
+button {
+  width: 6rem;
+  height: 2rem;
+  margin: 0.5rem 1rem;
+  background-color: rgba(65, 105, 225, 0.123);
+  border: 2px solid powderblue;
+  border-radius: 5px;
+  font-size: large;
+}
+
+button:hover {
+  background-color: rgba(238, 227, 79, 0.589);
+}
+
+button:first-child {
+  animation: slide-left 1s cubic-bezier(0.26, -0.01, 0, 1);
+}
+
+button:last-child {
+  animation: slide-right 1s cubic-bezier(0.26, -0.01, 0, 1);
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(40vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(-40vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
